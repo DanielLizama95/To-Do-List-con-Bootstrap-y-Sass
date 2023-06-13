@@ -1,0 +1,90 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  background-color: #548fd6 !important;
+}
+
+input {
+  font-family: inherit;
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.underlined {
+  text-decoration: line-through;
+}
+
+header {
+  background-color: #F8F8F8;
+  padding: 1rem 0;
+}
+header h1 {
+  color: #2061cb;
+}
+
+#main {
+  background-color: #548fd6;
+  min-height: 50vh;
+}
+
+#toDoContainer {
+  margin: 2rem auto;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #F8F8F8;
+}
+#toDoContainer .search-Container {
+  margin-top: 2rem;
+}
+#toDoContainer .search-Container input {
+  border: 3px solid #2061cb;
+  width: 75%;
+  height: 100%;
+  padding: 0.5rem;
+}
+#toDoContainer .search-Container input:active {
+  border: 3px solid #1b1da1;
+}
+#toDoContainer .toDoItem {
+  border: 1px solid black;
+  background-color: #c4e1e5;
+  padding: 0.3rem;
+}
+#toDoContainer .toDoItem button {
+  color: #F8F8F8;
+  background-color: #1b1da1;
+}
+#toDoContainer .toDoItem button:hover {
+  background-color: #04054a;
+  color: #F8F8F8;
+}
+@media (max-width: 767px) {
+  #toDoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #toDoContainer #inputData {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  #toDoContainer #addToDoBtn {
+    width: 100%;
+  }
+  #toDoContainer .toDoItem {
+    min-width: 50vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
